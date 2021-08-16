@@ -8,7 +8,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Javed Khan
+          Javed
         </a>
       </span>
     </div>
