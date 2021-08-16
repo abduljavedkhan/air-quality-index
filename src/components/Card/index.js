@@ -10,11 +10,12 @@ const Card = ({ city, aqi, updatedAt, status }) => {
 
   return (
     <>
-      <div className="flex flex-col align-center justify-center flex-wrap m-2 py-3 h-24 w-72 shadow-md hover:shadow-xl rounded-lg border-2 border-blue-300 bg-white"
-      onClick={() => setShowModal(true)}
+      <div
+        className="flex flex-col align-center justify-center flex-wrap m-2 py-3 h-24 w-72 shadow-md hover:shadow-xl rounded-lg border-2 border-blue-300 bg-white  cursor-pointer"
+        onClick={() => setShowModal(true)}
       >
         <div className="flex h-16 w-full my-1 align-center justify-center item-center">
-          <div className=" w-1/5 border-2 border-blue-300 rounded-lg cursor-pointer">
+          <div className=" w-1/5 border-2 border-blue-300 rounded-lg">
             <img
               src={img}
               className="rounded-xl object-cover hover:opacity-70 p-1 h-full w-full overflow-hidden"
@@ -59,7 +60,7 @@ const Card = ({ city, aqi, updatedAt, status }) => {
                     <SparklinesSpots />
                   </Sparklines>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center mx-3 px-2 my-1 py-1">
                   <span className="text-sm text-gray-700 m-2 p-2">
                     Status :{" "}
                     <span className="text-green-600 mx-1 px-1">{`${status} `}</span>
