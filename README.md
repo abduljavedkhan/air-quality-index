@@ -42,3 +42,6 @@ Following stack has been used in the project
 #### Mobile view:
 ![image](https://user-images.githubusercontent.com/44355278/129603869-69f0d5a1-e288-4a21-9ddc-232e6154641d.png)
 ![image](https://user-images.githubusercontent.com/44355278/129603692-82fa69ed-dad2-417a-b00a-051deb65fef5.png)
+
+#### Ipad view
+![image](https://user-images.githubusercontent.com/44355278/129616578-b44b7c98-326d-4d15-b156-2585cf0c40a2.png)
