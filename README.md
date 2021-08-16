@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# AIR QUALITY MONITOR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Web Application for monitoring Air Quality Index of Cities.
 
-## Available Scripts
+### URL
+[Live-URL](https://ajk-air-quality-index.herokuapp.com/)
 
-In the project directory, you can run:
+## MVP
 
-### `yarn start`
+- Live City wise AQI Chart (Air Quality Index)
+- AQI highlighted with different colors based on Level
+- Comparision of AQI of different cities
+- Magnified Chart of Live AQI of only one City
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Steps to run the project
+```
+- Clone the repository
+- update web socket url on .env file
+- Install the required dependency: `npm install`
+- Run the project: `npm start`
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technical Specification
 
-### `yarn test`
+Following stack has been used in the project
+- [ReactJs](https://reactjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React-use-websocket](https://www.npmjs.com/package/react-use-websocket)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## A guide to AQI(AIR QUALITY INDEX)
 
-### `yarn build`
+![image](https://user-images.githubusercontent.com/44355278/129602200-1a8b65a6-3f77-42ff-9be8-4b2379b53d9a.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ScreenShots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Web view:
+![image](https://user-images.githubusercontent.com/44355278/129603166-92fd5e26-0ff0-4fd3-939a-9b5f124dddce.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### AQI Chart for Bhubaneswar:
+![image](https://user-images.githubusercontent.com/44355278/129603433-c0255d41-bc7b-4bd6-be4d-44f32161bd3b.png)
 
-### `yarn eject`
+#### Mobile view:
+![image](https://user-images.githubusercontent.com/44355278/129603869-69f0d5a1-e288-4a21-9ddc-232e6154641d.png)
+![image](https://user-images.githubusercontent.com/44355278/129603692-82fa69ed-dad2-417a-b00a-051deb65fef5.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Ipad view
+![image](https://user-images.githubusercontent.com/44355278/129616578-b44b7c98-326d-4d15-b156-2585cf0c40a2.png)
