@@ -3,7 +3,7 @@
 A Web Application for monitoring Air Quality Index of Cities.
 
 ### URL
-[Live-URL](https://ajk-air-quality-index.herokuapp.com/)
+[Live-URL]()
 
 ## MVP
 
