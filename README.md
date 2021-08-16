@@ -3,7 +3,7 @@
 A Web Application for monitoring Air Quality Index of Cities.
 
 ### URL
-[Live-URL]()
+[Live-URL](https://gallant-williams-c939d8.netlify.app/)
 
 ## MVP
 
