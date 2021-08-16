@@ -58,12 +58,14 @@ const Card = ({ city, aqi, updatedAt, status }) => {
                   </Sparklines>
                 </div>
                 <div className="flex justify-center">
-                <span className="text-sm text-gray-700 m-2 p-2">
-                  Status :{" "}
-                  <span className="text-green-600 mx-1 px-1">{`${status} `}</span>
-                  Last Updated:
-                  <span className="text-green-500 mx-1 px-1">{`${updatedAt}`} </span>
-                </span>
+                  <span className="text-sm text-gray-700 m-2 p-2">
+                    Status :{" "}
+                    <span className="text-green-600 mx-1 px-1">{`${status} `}</span>
+                    Last Updated:
+                    <span className="text-green-500 mx-1 px-1">
+                      {`${updatedAt}`}{" "}
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
