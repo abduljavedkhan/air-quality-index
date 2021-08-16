@@ -7,7 +7,7 @@ export const timeCalculation = (time) => {
     return `few sec ago`;
   }
   if (seconds >= 60 && seconds <= 119) {
-    return `A min ago`;
+    return `a minute ago`;
   } else {
     return recTime.toLocaleString("en-US", {
       hour: "numeric",

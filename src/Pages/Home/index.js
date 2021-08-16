@@ -6,7 +6,6 @@ import timeCalculation from "../../utils/timeCalculaton";
 
 const Home = () => {
   const messageCityAqi = useRef([]);
-  const [data, setData] = useState([]);
   const [citiesData, setCitiesData] = useState([]);
   const wsUrl = process.env.REACT_APP_WEB_SOCKET_URL;
 
@@ -28,14 +27,13 @@ const Home = () => {
 
   messageCityAqi.current = useMemo(() => {
     setCitiesData((oldData) => concatData(oldData, lastJsonMessage));
-    setData((currentData) => [...currentData, lastJsonMessage]);
   }, [lastJsonMessage]);
 
   return (
     <div className="flex flex-col item-center justify-center my-1 ">
-      <div className="flex text-blue-500 justify-center font-bold text-md">
+      <div className="flex text-black-100 justify-center font-bold text-md">
         STATUS :{" "}
-        <span className="text-md text-gray-400 uppercase mx-1">
+        <span className="text-md text-blue-600 uppercase mx-1">
           {connectionStatus}
         </span>
       </div>
@@ -46,6 +44,7 @@ const Home = () => {
             city={val.city}
             aqi={Math.round(val.aqi * 100) / 100}
             updatedAt={timeCalculation(val.recievedAt)}
+            status={connectionStatus}
           />
         ))}
       </div>
