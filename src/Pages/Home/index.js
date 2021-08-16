@@ -10,8 +10,6 @@ const Home = () => {
   const wsUrl = process.env.REACT_APP_WEB_SOCKET_URL;
 
   const { readyState, lastJsonMessage } = useWebSocket(wsUrl, {
-    onOpen: () => console.log("connection established"),
-    onError: (error) => console.log("Error " + error),
     shouldReconnect: () => true,
     reconnectAttempts: 15,
     reconnectInterval: 1000,

@@ -34,15 +34,15 @@ const Card = ({ city, aqi, updatedAt, status }) => {
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none mx-2 px-2">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  <h3 className="text-md font-semibold text-blue-500">
+                <div className="flex items-center justify-center m-4 p-2 border-b border-solid border-blueGray-200 rounded-t">
+                  <h3 className="text-md font-semibold text-blue-500 mx-2 px-2">
                     {city}
                   </h3>
                   <span
                     className={` font-semibold ${textColor(aqi)} text-md`}
                   >{`${aqi}`}</span>
                   <button
-                    className="text-red-500 bg-white border-2 border-red-500 rounded-md font-bold uppercase px-2 py-1 m-1 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-red-500 bg-white border-2 border-red-500 rounded-md font-bold uppercase px-2 py-1 m-1 ml-16 mr-2 text-sm outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
@@ -50,19 +50,21 @@ const Card = ({ city, aqi, updatedAt, status }) => {
                   </button>
                 </div>
                 <div className="flex justify-center m-15 p-10 w-96 h-44 align-center item-center">
-                  <Sparklines data={aqiData.current} limit={70}>
+                  <Sparklines data={aqiData.current} limit={50}>
                     <SparklinesLine
                       style={{ stroke: "#2991c8", fill: "none" }}
                     />
                     <SparklinesSpots />
                   </Sparklines>
                 </div>
-                <span className="text-sm text-gray-700 m-2">
+                <div className="flex justify-center">
+                <span className="text-sm text-gray-700 m-2 p-2">
                   Status :{" "}
-                  <span className="text-green-600 mx-1">{`${status} `}</span>
+                  <span className="text-green-600 mx-1 px-1">{`${status} `}</span>
                   Last Updated:
-                  <span className="text-green-500 mx-1">{`${updatedAt}`} </span>
+                  <span className="text-green-500 mx-1 px-1">{`${updatedAt}`} </span>
                 </span>
+                </div>
               </div>
             </div>
           </div>
