@@ -17,7 +17,7 @@ const concatData = (prevData, newData) => {
       if (existingData) {
         existingData.aqi = val.aqi;
       } else {
-        const newData = { city: val.city, aqi: val.aqi };
+        const newData = { city: val.city, aqi: val.aqi, recievedAt: new Date().toISOString()};
         finalData.push(newData);
       }
     });

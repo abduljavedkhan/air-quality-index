@@ -3,7 +3,7 @@ import Header from "./Header";
 
 const MainLayout = ({ children }) => {
     return (
-        <div className="min-h-screen flex flex-col justify-between">
+        <div className="min-h-screen flex flex-col justify-between bg-blend-hue">
             <Header />
                 {children}
             <Footer />
