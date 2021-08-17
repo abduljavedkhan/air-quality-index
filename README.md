@@ -34,14 +34,14 @@ Following stack has been used in the project
 ## ScreenShots
 
 #### Web view:
-![image](https://user-images.githubusercontent.com/44355278/129603166-92fd5e26-0ff0-4fd3-939a-9b5f124dddce.png)
+![image](https://user-images.githubusercontent.com/44355278/129717276-259b8a1a-f09c-482c-be30-ccdf20c5c3ad.png)
 
 #### AQI Chart for Bhubaneswar:
-![image](https://user-images.githubusercontent.com/44355278/129603433-c0255d41-bc7b-4bd6-be4d-44f32161bd3b.png)
+![image](https://user-images.githubusercontent.com/44355278/129716596-5e5b29f9-2cbe-4f19-b556-e4c6d47e846c.png)
 
 #### Mobile view:
-![image](https://user-images.githubusercontent.com/44355278/129603869-69f0d5a1-e288-4a21-9ddc-232e6154641d.png)
-![image](https://user-images.githubusercontent.com/44355278/129603692-82fa69ed-dad2-417a-b00a-051deb65fef5.png)
+![image](https://user-images.githubusercontent.com/44355278/129716779-ae59f139-ceec-48c9-8819-082b5a2cbdd4.png)
+![image](https://user-images.githubusercontent.com/44355278/129716912-b9fd7467-b86f-40a2-bd09-fa9e670d2545.png)
 
 #### Ipad view
-![image](https://user-images.githubusercontent.com/44355278/129616578-b44b7c98-326d-4d15-b156-2585cf0c40a2.png)
+![image](https://user-images.githubusercontent.com/44355278/129717081-dd516712-ad5f-44fe-ae0e-9389080adce2.png)
