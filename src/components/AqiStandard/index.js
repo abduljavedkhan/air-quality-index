@@ -3,7 +3,7 @@ import { AQI_STANDARDS } from "../../utils/constant";
 
 const AqiStandard = () => {
   return (
-    <div className="flex align-center justify-center flex-wrap my-1 py-1">
+    <div className="flex align-center justify-center flex-wrap m-1">
       {AQI_STANDARDS.map((variant, index) => (
         <div
           key={index}
