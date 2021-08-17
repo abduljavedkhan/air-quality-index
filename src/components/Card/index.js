@@ -1,7 +1,7 @@
 import React, { useState, useRef, useMemo } from "react";
 import img from "../../assets/images/g3.jpg";
-import { Sparklines, SparklinesLine, SparklinesSpots } from "react-sparklines";
 import { textColor } from "../../utils/constant";
+import Chart from "../Chart";
 
 const Card = ({ city, aqi, updatedAt, status }) => {
   const aqiData = useRef([]);
@@ -52,14 +52,7 @@ const Card = ({ city, aqi, updatedAt, status }) => {
                     x
                   </button>
                 </div>
-                <div className="flex justify-center m-15 p-10 w-96 h-44 align-center item-center">
-                  <Sparklines data={aqiData.current} limit={50}>
-                    <SparklinesLine
-                      style={{ stroke: "#2991c8", fill: "none" }}
-                    />
-                    <SparklinesSpots />
-                  </Sparklines>
-                </div>
+                <Chart aqiData={aqiData.current} />
                 <div className="flex justify-center mx-3 px-2 my-1 py-1">
                   <span className="text-sm text-gray-700 m-2 p-2">
                     Status :{" "}
@@ -80,4 +73,4 @@ const Card = ({ city, aqi, updatedAt, status }) => {
   );
 };
 
-export default Card;
+export default React.memo(Card);
