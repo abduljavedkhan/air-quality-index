@@ -37,16 +37,3 @@ export const textColor = (aqiVal) =>
     : aqiVal >= 301 && aqiVal <= 400
     ? "text-red-500"
     : "text-red-800";
-
-    export const textColorHex = (aqiVal) =>
-  aqiVal >= 0 && aqiVal <= 50
-    ? "#059669"
-    : aqiVal >= 51 && aqiVal <= 100
-    ? "#34d399"
-    : aqiVal >= 101 && aqiVal <= 200
-    ? "#fcd34d"
-    : aqiVal >= 201 && aqiVal <= 300
-    ? "#d97706"
-    : aqiVal >= 301 && aqiVal <= 400
-    ? "#ef4444"
-    : "#991b1b";
