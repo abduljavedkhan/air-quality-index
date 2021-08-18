@@ -1,6 +1,6 @@
 import React from "react";
 import { Sparklines, SparklinesLine, SparklinesSpots } from "react-sparklines";
-import { textColor } from "../../utils/constant";
+import { textColor, textColorHex } from "../../utils/constant";
 
 const Chart = ({ aqiData, city, aqi, status, updatedAt, onChartClick }) => {
   return (
@@ -28,7 +28,7 @@ const Chart = ({ aqiData, city, aqi, status, updatedAt, onChartClick }) => {
       </div>
       <div className="flex justify-center m-5 p-10 w-auto h-60 align-center item-center  overflow-hidden">
         <Sparklines data={aqiData} limit={50} over>
-          <SparklinesLine style={{ stroke: "#2991c8", fill: "none" }} />
+          <SparklinesLine style={{ stroke: textColorHex(aqi), fill: "none" }} />
           <SparklinesSpots />
         </Sparklines>
       </div>

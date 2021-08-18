@@ -1,8 +1,8 @@
 import React, { useMemo, useRef, useState } from "react";
 import useWebSocket, { ReadyState } from "react-use-websocket";
-import CityList from "../../components/CityList";
-import ConnectionStatus from "../../components/ConnectionStatus";
-import concatData from "../../utils/concatData";
+import CityList from "../components/CityList";
+import ConnectionStatus from "../components/ConnectionStatus";
+import concatData from "../utils/concatData";
 
 const Home = () => {
   const messageCityAqi = useRef([]);
